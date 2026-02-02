@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Пример страницы с контентом</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        nav {
+            margin: 20px 0;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .content {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Мой сайт</h1>
+        <p>Добро пожаловать на мой сайт!</p>
+    </header>
+
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">О нас</a>
+        <a href="#">Услуги</a>
+        <a href="#">Контакты</a>
+    </nav>
+
+    <main class="content">
+        <article>
+            <h2>Заголовок статьи</h2>
+            <p>Это пример текста статьи. Здесь может быть много полезной информации.</p>
+            <ul>
+                <li>Пункт списка 1</li>
+                <li>Пункт списка 2</li>
+                <li>Пункт списка 3</li>
+            </ul>
+        </article>
+
+        <section>
+            <h3>Форма обратной связи</h3>
+            <form>
+                <label for="name">Имя:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="message">Сообщение:</label><br>
+                <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Мой сайт. Все права защищены.</p>
+    </footer>
+</body>
+</html>
