@@ -1,0 +1,32 @@
+<h2>CSS документация</h2>
+        <p>CSS (Cascading Style Sheets) - язык таблиц стилей для оформления HTML документов.</p>
+
+        <h3>Способы подключения CSS:</h3>
+        <ol>
+            <li><b>Внешний файл:</b> &lt;link rel="stylesheet" href="style.css"&gt;</li>
+            <li><b>Внутренний стиль:</b> &lt;style&gt; ... &lt;/style&gt;</li>
+            <li><b>Инлайн стиль:</b> style="свойство: значение;"</li>
+        </ol>
+
+        <h3>Пример CSS правил:</h3>
+        <pre>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+        </pre>

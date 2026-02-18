@@ -1,0 +1,53 @@
+from pygments.style import Style
+from pygments.token import Keyword, Name, Comment, String, Error, \
+    Number, Operator, Generic, Token, Punctuation
+
+
+class MonokaiDarkStyle(Style):
+    background_color = "#272822"
+    styles = {
+        Token: '#f8f8f2',
+        Comment: '#75715e',
+        Comment.Preproc: '#ae81ff',
+        Keyword: '#f92672',
+        Keyword.Type: '#66d9ef',
+        Operator: '#f92672',
+        Punctuation: '#f8f8f2',
+        Name: '#f8f8f2',
+        Name.Function: '#a6e22e',
+        Name.Class: '#a6e22e',
+        Name.Decorator: '#ae81ff',
+        Name.Namespace: '#ae81ff',
+        Name.Exception: '#f92672',
+        Name.Variable: '#f8f8f2',
+        Name.Constant: '#ae81ff',
+        Name.Attribute: '#a6e22e',
+        Name.Tag: '#f92672',
+        String: '#e6db74',
+        String.Char: '#e6db74',
+        String.Doc: '#75715e',
+        String.Double: '#e6db74',
+        String.Escape: '#ae81ff',
+        String.Interpol: '#f92672',
+        String.Other: '#e6db74',
+        String.Regex: '#e6db74',
+        String.Single: '#e6db74',
+        String.Symbol: '#e6db74',
+        Number: '#ae81ff',
+        Number.Float: '#ae81ff',
+        Number.Hex: '#ae81ff',
+        Number.Integer: '#ae81ff',
+        Number.Oct: '#ae81ff',
+        Generic: '#f8f8f2',
+        Generic.Deleted: '#f92672',
+        Generic.Emph: '#f8f8f2',
+        Generic.Error: '#f92672',
+        Generic.Heading: '#f8f8f2',
+        Generic.Inserted: '#a6e22e',
+        Generic.Output: '#75715e',
+        Generic.Prompt: '#f8f8f2',
+        Generic.Strong: '#f8f8f2',
+        Generic.Subheading: '#f8f8f2',
+        Generic.Traceback: '#f92672',
+        Error: '#f92672',
+    }

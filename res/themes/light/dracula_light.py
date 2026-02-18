@@ -1,0 +1,53 @@
+from pygments.style import Style
+from pygments.token import Keyword, Name, Comment, String, Error, \
+    Number, Operator, Generic, Token, Punctuation
+
+
+class DraculaLightStyle(Style):
+    background_color = "#f8f8f2"
+    styles = {
+        Token: '#282a36',
+        Comment: '#6272a4',
+        Comment.Preproc: '#ff79c6',
+        Keyword: '#ff79c6',
+        Keyword.Type: '#8be9fd',
+        Operator: '#ff79c6',
+        Punctuation: '#282a36',
+        Name: '#282a36',
+        Name.Function: '#50fa7b',
+        Name.Class: '#8be9fd',
+        Name.Decorator: '#ff79c6',
+        Name.Namespace: '#ff79c6',
+        Name.Exception: '#ff79c6',
+        Name.Variable: '#282a36',
+        Name.Constant: '#bd93f9',
+        Name.Attribute: '#50fa7b',
+        Name.Tag: '#ff79c6',
+        String: '#f1fa8c',
+        String.Char: '#f1fa8c',
+        String.Doc: '#6272a4',
+        String.Double: '#f1fa8c',
+        String.Escape: '#ff79c6',
+        String.Interpol: '#ff79c6',
+        String.Other: '#f1fa8c',
+        String.Regex: '#f1fa8c',
+        String.Single: '#f1fa8c',
+        String.Symbol: '#f1fa8c',
+        Number: '#bd93f9',
+        Number.Float: '#bd93f9',
+        Number.Hex: '#bd93f9',
+        Number.Integer: '#bd93f9',
+        Number.Oct: '#bd93f9',
+        Generic: '#282a36',
+        Generic.Deleted: '#ff5555',
+        Generic.Emph: '#282a36',
+        Generic.Error: '#ff5555',
+        Generic.Heading: '#282a36',
+        Generic.Inserted: '#50fa7b',
+        Generic.Output: '#6272a4',
+        Generic.Prompt: '#282a36',
+        Generic.Strong: '#282a36',
+        Generic.Subheading: '#282a36',
+        Generic.Traceback: '#ff5555',
+        Error: '#ff5555',
+    }

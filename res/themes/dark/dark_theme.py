@@ -3,26 +3,26 @@ from PyQt6.QtGui import QPalette, QColor
 
 def apply_dark_theme(app):
     palette = QPalette()
-    palette.setColor(QPalette.ColorRole.Window, QColor(29, 29, 29))  # #1D1D1D
-    palette.setColor(QPalette.ColorRole.WindowText, QColor(201, 201, 201))  # #C9C9C9
-    palette.setColor(QPalette.ColorRole.Base, QColor(29, 29, 29))  # #1D1D1D
+    palette.setColor(QPalette.ColorRole.Window, QColor(29, 29, 29))
+    palette.setColor(QPalette.ColorRole.WindowText, QColor(201, 201, 201))
+    palette.setColor(QPalette.ColorRole.Base, QColor(29, 29, 29))
     palette.setColor(QPalette.ColorRole.AlternateBase, QColor(40, 40, 40))
-    palette.setColor(QPalette.ColorRole.Text, QColor(201, 201, 201))  # #C9C9C9
-    palette.setColor(QPalette.ColorRole.Button, QColor(29, 29, 29))  # #1D1D1D
-    palette.setColor(QPalette.ColorRole.ButtonText, QColor(201, 201, 201))  # #C9C9C9
-    palette.setColor(QPalette.ColorRole.Highlight, QColor(138, 92, 245))  # #8A5CF5
+    palette.setColor(QPalette.ColorRole.Text, QColor(201, 201, 201))
+    palette.setColor(QPalette.ColorRole.Button, QColor(29, 29, 29))
+    palette.setColor(QPalette.ColorRole.ButtonText, QColor(201, 201, 201))
+    palette.setColor(QPalette.ColorRole.Highlight, QColor(138, 92, 245))
     palette.setColor(QPalette.ColorRole.HighlightedText, QColor(255, 255, 255))
     palette.setColor(QPalette.ColorRole.BrightText, QColor(255, 255, 255))
-    palette.setColor(QPalette.ColorRole.Light, QColor(97, 97, 97))  # #616161
+    palette.setColor(QPalette.ColorRole.Light, QColor(97, 97, 97))
     palette.setColor(QPalette.ColorRole.Midlight, QColor(70, 70, 70))
-    palette.setColor(QPalette.ColorRole.Dark, QColor(97, 97, 97))  # #616161
-    palette.setColor(QPalette.ColorRole.Mid, QColor(97, 97, 97))  # #616161
+    palette.setColor(QPalette.ColorRole.Dark, QColor(97, 97, 97))
+    palette.setColor(QPalette.ColorRole.Mid, QColor(97, 97, 97))
     palette.setColor(QPalette.ColorRole.Shadow, QColor(20, 20, 20))
-    palette.setColor(QPalette.ColorRole.Link, QColor(138, 92, 245))  # #8A5CF5
+    palette.setColor(QPalette.ColorRole.Link, QColor(138, 92, 245))
     palette.setColor(QPalette.ColorRole.LinkVisited, QColor(110, 74, 196))
-    palette.setColor(QPalette.ColorRole.ToolTipBase, QColor(29, 29, 29))  # #1D1D1D
-    palette.setColor(QPalette.ColorRole.ToolTipText, QColor(201, 201, 201))  # #C9C9C9
-    palette.setColor(QPalette.ColorRole.PlaceholderText, QColor(97, 97, 97))  # #616161
+    palette.setColor(QPalette.ColorRole.ToolTipBase, QColor(29, 29, 29))
+    palette.setColor(QPalette.ColorRole.ToolTipText, QColor(201, 201, 201))
+    palette.setColor(QPalette.ColorRole.PlaceholderText, QColor(97, 97, 97))
     app.setPalette(palette)
     app.setStyleSheet("""
         QMainWindow, QWidget {

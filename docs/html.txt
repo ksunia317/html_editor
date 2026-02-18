@@ -1,0 +1,30 @@
+<h2>HTML документация</h2>
+        <p>HTML (HyperText Markup Language) - язык разметки гипертекста для создания веб-страниц.</p>
+
+        <h3>Основные теги:</h3>
+        <ul>
+            <li><b>&lt;html&gt;</b> - корневой элемент HTML документа</li>
+            <li><b>&lt;head&gt;</b> - содержит метаинформацию о документе</li>
+            <li><b>&lt;title&gt;</b> - заголовок документа</li>
+            <li><b>&lt;body&gt;</b> - содержимое документа</li>
+            <li><b>&lt;h1&gt;-&lt;h6&gt;</b> - заголовки разных уровней</li>
+            <li><b>&lt;p&gt;</b> - абзац</li>
+            <li><b>&lt;a&gt;</b> - гиперссылка</li>
+            <li><b>&lt;img&gt;</b> - изображение</li>
+            <li><b>&lt;div&gt;</b> - блочный контейнер</li>
+            <li><b>&lt;span&gt;</b> - строчный контейнер</li>
+        </ul>
+
+        <h3>Структура HTML документа:</h3>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Заголовок страницы&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+        &lt;p&gt;Это мой первый HTML документ.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>

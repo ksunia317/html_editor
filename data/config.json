@@ -1,0 +1,21 @@
+{
+  "theme": "light",
+  "editor": {
+    "font_size": 14,
+    "tab_size": 4,
+    "auto_save": false,
+    "auto_save_interval": 5,
+    "show_line_numbers": true
+  },
+  "html": {
+    "default_version": "HTML5",
+    "default_encoding": "UTF-8",
+    "auto_format": true
+  },
+  "backup": {
+    "enabled": false,
+    "interval": 1,
+    "location": "C:/Users/User/PycharmProjects/html_editor/examples"
+  },
+  "highlight_theme": "default"
+}

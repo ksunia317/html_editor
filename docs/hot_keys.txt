@@ -1,0 +1,19 @@
+<h2>Горячие клавиши</h2>
+
+        <h3>Основные:</h3>
+        <table border="1" cellpadding="5">
+            <tr><th>Комбинация</th><th>Действие</th></tr>
+            <tr><td>Ctrl + S</td><td>Сохранить файл</td></tr>
+            <tr><td>Ctrl + Z</td><td>Отменить действие</td></tr>
+            <tr><td>Ctrl + F</td><td>Поиск по документу</td></tr>
+            <tr><td>Ctrl + T</td><td>Новый файл (вкладка)</td></tr>
+            <tr><td>Ctrl + W</td><td>Закрыть вкладку</td></tr>
+            <tr><td>Ctrl + Alt + L</td><td>Автоформатирование кода</td></tr>
+        </table>
+
+        <h3>Навигация:</h3>
+        <table border="1" cellpadding="5">
+            <tr><th>Комбинация</th><th>Действие</th></tr>
+            <tr><td>Ctrl + Tab</td><td>Следующая вкладка</td></tr>
+            <tr><td>Ctrl + Shift + Tab</td><td>Предыдущая вкладка</td></tr>
+        </table>
