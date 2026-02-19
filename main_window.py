@@ -623,10 +623,7 @@ class MainWindow(QWidget):
                     self.note_input.setPlainText(note["content"])
                     self.note_input.blockSignals(False)
                     self.highlight_code()
-                    if note.get("is_html", True):
-                        self.format_text()
-                    else:
-                        self.text_browser.setPlainText(note["content"])
+                    self.format_text()
                     self.update_file_stats()
                     self.update_dates()
                     self.update_ui_state()
@@ -850,25 +847,15 @@ class MainWindow(QWidget):
 
     def format_text(self):
         if self.current_note_id is not None:
-            try:
-                is_html = True
-                for note in self.notes_data:
-                    if note["id"] == self.current_note_id:
-                        is_html = note.get("is_html", True)
-                        break
-                if is_html:
-                    self.text_browser.setHtml(self.note_input.toPlainText())
-                else:
-                    self.text_browser.setPlainText(self.note_input.toPlainText())
-            except Exception:
-                self.text_browser.setPlainText(self.note_input.toPlainText())
+            text = self.note_input.toPlainText()
+            self.text_browser.setHtml(text)
 
     def apply_all_settings_from_settings(self):
+        self.config_data = self.load_config()
         self.theme = self.config_data.get("theme", "dark")
         self.apply_theme()
         self.apply_editor_settings()
-        if hasattr(self, 'setup_auto_save'):
-            self.setup_auto_save()
+        self.setup_auto_save()
         self.highlight_code()
         if self.current_note_id:
             self.format_text()

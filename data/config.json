@@ -1,7 +1,7 @@
 {
-  "theme": "light",
+  "theme": "dark",
   "editor": {
-    "font_size": 14,
+    "font_size": 12,
     "tab_size": 4,
     "auto_save": false,
     "auto_save_interval": 5,
@@ -14,7 +14,7 @@
   },
   "backup": {
     "enabled": false,
-    "interval": 1,
+    "interval": 10,
     "location": "C:/Users/User/PycharmProjects/html_editor/examples"
   },
   "highlight_theme": "default"

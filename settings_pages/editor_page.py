@@ -50,33 +50,20 @@ class EditorPage(QWidget):
         autosave_layout.addLayout(interval_layout)
         autosave_group.setLayout(autosave_layout)
         layout.addWidget(autosave_group)
-        self.apply_editor_btn = QPushButton("Сохранить настройки редактора")
+        self.apply_editor_btn = QPushButton("Применить настройки")
         self.apply_editor_btn.clicked.connect(self.apply_editor_settings)
         layout.addWidget(self.apply_editor_btn)
         layout.addStretch()
 
     def apply_editor_settings(self):
-        if not self.settings_window.main_window or not self.settings_window.main_window.isVisible():
-            self.settings_window.config_data["editor"]["font_size"] = self.font_size_spin.value()
-            self.settings_window.config_data["editor"]["tab_size"] = self.tab_size_spin.value()
-            self.settings_window.config_data["editor"]["show_line_numbers"] = self.show_lines_check.isChecked()
-            self.settings_window.config_data["editor"]["word_wrap"] = self.word_wrap_check.isChecked()
-            self.settings_window.config_data["editor"]["auto_save"] = self.autosave_check.isChecked()
-            self.settings_window.config_data["editor"]["auto_save_interval"] = self.autosave_interval_spin.value()
-            self.settings_window.save_config()
-            return
         self.settings_window.config_data["editor"]["font_size"] = self.font_size_spin.value()
         self.settings_window.config_data["editor"]["tab_size"] = self.tab_size_spin.value()
         self.settings_window.config_data["editor"]["show_line_numbers"] = self.show_lines_check.isChecked()
-        self.settings_window.config_data["editor"]["word_wrap"] = self.word_wrap_check.isChecked()
         self.settings_window.config_data["editor"]["auto_save"] = self.autosave_check.isChecked()
         self.settings_window.config_data["editor"]["auto_save_interval"] = self.autosave_interval_spin.value()
         self.settings_window.save_config()
         if self.settings_window.main_window:
-            try:
-                self.settings_window.main_window.config_data = self.settings_window.config_data
-                self.settings_window.main_window.apply_editor_settings()
-                if hasattr(self.settings_window.main_window, 'setup_auto_save'):
-                    self.settings_window.main_window.setup_auto_save()
-            except Exception:
-                pass
+            self.settings_window.main_window.config_data = self.settings_window.config_data
+            self.settings_window.main_window.apply_editor_settings()
+            if hasattr(self.settings_window.main_window, 'setup_auto_save'):
+                self.settings_window.main_window.setup_auto_save()
